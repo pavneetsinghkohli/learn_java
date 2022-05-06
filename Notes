@@ -1,0 +1,14 @@
+#functional_interface
+
+1. functional_interface only allow to write lambda expression.
+
+abstraction and inheritance, polymorphisum and encapsulations...
+
+inheritance - parant child... 1. use Parent methods and 2. extends keyword 3. disguise
+encapsulation - getter setter
+abstraction - interface, abstract classes (both will have abstract mathods - imp. in diff classes.)
+polymorphisum - runtime poly and method overloading, method overriding.
+
+check encapsulationa and aggregation interfaces
+collections
+excpetions..

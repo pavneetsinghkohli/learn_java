@@ -1,0 +1,54 @@
+Java-8:
+•	Lambda Expressions
+•	Functional Interface
+•	Predicate & Supplier and Consumer Interface
+
+•	Streams
+•	Static Method
+•	Default method
+•	Optional class
+
+Spring:
+•	IOC container
+•	Dependency Injection
+•	Bean
+•	Autowiring
+•	Qualifiers
+•	Annotations
+•	Spring boot crud operations - POST, GET, PUT, DELETE Mappings
+•	Entity designing
+•	Hibernate mappings – oneToOne, manyToOne, OneToMany, ManyToMany
+•	Hibernate joining multiple tables and columns
+•	Spring data Jpa repository --- Java Persistance API
+•	CRUD Repository
+•	Jpa anotations
+•	Jpa queries
+•	Jpql queries
+•	SQL -native queries
+•	Db connections with mysql
+•	Spring Profiles
+•	DTOs: data transfer object creationm
+•	Spring boot Exception’s handlings – custom exceptions and global exceptions
+•	Swagger ui Doc
+•	POST MAN
+•	Lombok plugin
+•	Maven build tool
+•	Tomcat server
+•	Microserices:
+•	Zuul API Gateway
+•	Eureka server-client
+•	Rest Template
+•	Bean creation
+•	Spring cloud sleuth – loggings
+•	Zipkin server
+Spring security with basic inmemory Authentication
+
+
+Softwares:
+•	Eclipse/Spring tool suite/ intellj
+•	Openjdk 11V+
+•	Apache Maven
+•	Apache tomcat
+•	Mysql installer (mysql workbench + mysql server + vs studio code plugin)
+•	Postman
+•	Git bash
