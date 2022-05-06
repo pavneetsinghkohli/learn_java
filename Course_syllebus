@@ -1,8 +1,10 @@
 Java-8:
+Day1
 •	Lambda Expressions
 •	Functional Interface
 •	Predicate & Supplier and Consumer Interface
 
+Day2
 •	Streams
 •	Static Method
 •	Default method
