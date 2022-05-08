@@ -1,5 +1,31 @@
 #functional_interface
 
+Interface:
+•	It is like contains only abstract methods
+•	Its implementation will we taken care in other classes.
+•	Here we will be using implements keyword.
+•	We can achieve loosely coupling
+•	Multiple inheritance is possible through interface
+
+Functional Interface:
+•	It contains only one abstract method.
+•	This functional interface can be implemented by lambda expression.
+•	These are 2 types
+1.	Inbuilt functional interfaces:
+Ex: predicate, supplier, consumer.
+2.	User defined:
+•	@FuncationalInterface annotation, so this restrict adding multiple abstract methods
+
+@FunationalInterface
+Public interface Adding{
+……..
+……..
+……
+……
+}
+
+
+
 1. functional_interface only allow to write lambda expression.
 
 abstraction and inheritance, polymorphisum and encapsulations...
