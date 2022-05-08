@@ -1,0 +1,444 @@
+Geeks for Geeks website -  thoughts and theroy  - clarify doubts
+Youtube JavaBrains - his view s as well
+OOPS , SOLID principals, Clean Code
+OCJP - oracle certified java professional 8
+Open JDK - free version after 8 of java
+https://start.spring.io/ creating spring boot programming
+Plan : 7 days
+1. Watch java Udemy course - its a fast course - do handson alongwith whereever possible
+2. Make sure it covers OOPS, Solid and Clean code
+3. Look for Java excercises to solve some problems withing java
+4. Learn spring boot things and then get into some thing practicle.
+a. Keep referring JavaBrains and GeeksforGeeks
+Notes:
+1. Each class is basically a deifinition, it may have a construct optional if it wants to initialize it withsome kind of variable/states
+a. Rest it is bunch of methods
+b. Now, how these methods are going to be called are bascially, when the class is being called as new Class{}, it is irrespective if it is given a object variable/ref. variable or not.
+c. Now a class
+Java uses JDK to produce the java APP from the code and it is produced in the byte codes independent of any host environment and therefore there is a JRE runtime environment tobe created (end users) to be intalled to run it where you want.
+OOP concepts:
+-dog Object :
+Objects : a Real world entity which we can touch feel etc You, me , laptop and mobile etc
+Properties/attributes : Noun - what are things associated with it such as Breed, color, weight etc
+Behaviour : Verb - they wil have diff. Behavour, look, eat, sleep, run and bark etc
+Class : is a Blueprint or drawiing as how it looks like.
+
+1. Inheritance :
+a. When we have some properties we know will be common to be reused again and again to most of the objects, we keep it in  one object and then inherit it. Parent class and their child classes will inherit it.
+2. Polymorphism
+3. Abstraction
+4. Encapsulation
+=====
+Java the Big Picture - plural sight
+--
+AWT was a GUI interface for creating---- Desktop applications and hence Swing does the better jobs for adding layout and seemless work across all platforms for look and feel.++++
+Modern looking java with new java..javaFXis is the best bet
+You can use the EE knowledge tobuild on Springboot framework but may not be vis a vis.
+Eclipse ane IntelliJ are 2 imp.
+IntelliJ are more advanced
+-----
+Gradel for android applications
+Kotlin and scala provides the souce code and compiler, however when complied they are provide the same Java Application Bytecode for applications to run on the server.
+Similarly ther is a JRuBY and Jpython where they complie the language to the same java applicatio bytecode - without learning the new language
+Do while -- doeasnät matter what is the condition, it will run for once for sure.
+Class is all about State/properties and Function/behaviour/operations (methods- group of statements)
+Use return if u want to return anything or use Void to return noting else give if it is Int, string etc
+jShell shortcuts :
+1. Ctrl + a = going to the start of the line and Ctrl + e going to the end of it
+2. Ctrl + r = search and type what u want to search from previous commands u run, it iwll show you the first search result and then if u press ctrl + r again then rest of the results one by one, to choose entre
+3. Jshell keep all the commands to store inthe variable such as €4, you can use it again if u like
+Invoking, calling and executing a method- naming
+Method and functions are quite similar with little diff
+Parameter is to define what is going to be in as Argument, and argument is what we are givingv when we are calling the method. Example. sayPrintHW(2) 2 here is argument to call the method. And parameter is while defining the method.
+Class should work with Camel case however method with small letter but later could be upper letter.
+sayHelloWorldTwice()
+Method overloading - when you are having a default method with no input so it will print the default 5table but if you key any int input then it will instead print the table of your integert input.
+Note : Void nameOfMethod() doesn't have any value in return and therefore we are using System.out.println to print an output and therefore we cannot use this method as a value in the variable, as defining a variable must have value in the right side, but when we change the method which has a return type as Int or something else then it can be considered as a value while defining the method. Refer below example.
+Class is a Template and we create multple objects or instance within the class to use it's property as template. Example, contry is a class and india could be its object or instance.
+The method defined inside the class, can be called only by objects/instance created under Class.
+So big picture :
+1. Defined the Class -  as a Template,
+a. Defined what all methods a Class can perform
+2. Create the objects/instances who should leverage the Class, and they can call those methods mentioned in the class.
+Overloading : When you have similar methods written with duplicate code where you may want to have some of the default behaviour and some of the variable/flexibility to the user - u use multiple methods one after another.
+Refactoring of Code : is when you would like to have re-work your previous code and improve the code by removing verbose and simplyfy it called refactoring.
+Calling it : change the structure of code, without changing its functionality.
+Shortcut : command + shift + l for shortcut menu
+Command + N : New Project, class, package etc
+Comamnd + shift + R : Searching the Classes
+Structured/functional programming : thinks only about the functions or behaviours or actions, such as how to go from one place to another refer above picture
+Object Oriented programming : thinks in terms of Objects, Data/state and then Actions/behavioiurs etc as in structural.
+Encapsulation : is to protect the instance variable to be protected from other objects, so keeping it private and adding methods for changing them is the way for encapsulation, there could be more to it though.
+1. Set the method called setter to set the variable with some condition such as if(speed >=0) then you this.speed = speed
+Setters and getters can be generated automatically from eclipse with right click and go to source and generate getters and setters, make sure you have the private member variable defined.
+You can have a limitation logic within setter such as if(speed >=0), then instead of writing that logic other places, you can simply call the setter method to use that limiation.
+Constructor : Basically, when we create an instance/object for the class, and say
+ClassName objectName = new ClassName();
+The ClassName() is basically calling a constructor(similar to call a method) and therefore since it is calling by default when we are creating the objects/instances we can use it to initialize the variable value such as SPEED but since if we create this custome constructor to initialize the value so java says that there is no default contructure and hence if ther is some objects you don't want to intiate with speed value, you have to create a default constucture as well manually.
+Now, again the beauty of Java, you can call from one method to another and always bigger to the lower - this(5) is calling the below  MotorBike(int speed) contructor but having a hard coded value of 5.
+Explicit converstion : when adding a large values into the shorter value bucket such as long values into the integers
+Implecit conversion : when adding the small values into the larger values bucket such as integers into the long.
+Pre increment and post increment----by keeping ++ sign last, j gets the value of i which was 10 and later i gets incremented and therefore i becomes 11 later
+Pre decrement and post decrement also the same with -- sign
+Command + 1 = to get eclipse to the creation of methods for us.
+Don't use float or double for the financial systesm it doesnät provide the accuracy
+Instead use BigDecimal as above…
+Also, it provides immutable variable, which doesn't change its value.
+Type number1. and press tab to see all the default methods provided by BigDecimal.
+Reason why we must use "" while putting hte decimal value in the BigDecimal, as string…becoz if we are not putting string it is default a double and therefore it gives unaccurate results.
+^ = Xor is the name of the 3rd operator…and it is true only when one of the condition is false but true if both are either true or false
+They call && a shortcircuit operator which is lazy, as it finds the first condition false then i t wouldn't go to the 2nd condition and hence i value doesn't get increased
+With & it does check both the conditions and hence i value goes incremented.
+Search google….unicode value
+You can assigne their unicode to assign it to any variable, if it is hard to get typed from keyboard.
+It has 2 bytes memory space
+To check the char values from jshell
+Turnery operator:
+Guard check:
+Templates out of Eclips such as sysout, main, fore and press contrl + space
+You can automate such code which you are typing many times…and create your own template..
+While loop - quite similar with for loop, when should we use it ---when we are not sure or certain that how many number of times should we run it for exampole :
+Do while loop….condition is after the statement, and hence even the condition is not met, it does run the statement for once and later check the condition
+All classes are reference types in java..
+Instance types or objects we create are reference variable
+Premitive variables are the default variable types such as string, int etc..classes are reference types….but the objects we create are gettin stored in Heap memory and then the instances are getting reference to their object in Heap and therefore called the reference variable. Whereas
+Ref variable vs premitive variable
+Premitive varialble - when we say i = j then j value stores into i and when i change the value of i again, it doesn't change the value of j. as both are playing with the content or the value
+Ref. variable - since they stored in the heap memory and gives only the reference for the heap memory location and hence when we say one instance = another instance such as Animal ref = cat; then Animal class is telling the reference varibale of ref to get the memory location from cat instance. And hence their memory location get same and when there is a change in any of the instance value, both will have the same value…however when there is a == comparision operator it will only check their memory location ref and not the value, since they are ref. variables and not premitive variables which compares their direct value.
+In jshell type str. And press tab to see all the possible methods.
+If you are worried of multithreading for concatinating multiple strings as i t has to have lots of memory objects inorder to concatenate strings hence they suggest us to use StringBuffer - it provides muteable strings. And also StringBuilder classes
+In Ref. variable - when we say new Integer, it creates a new Stack Mem location pointing to the Heap memory location
+But when we say Integer.valueOf then it uses the same memory location when it finds the same object already created and that is recommended option.
+Simply giving wrapper class, with Integer seven = 7;  called a autoboxing and it is as simple as Integer.valueOf(
+Java is not completely a OOPs it is 99.9 that.01 percent is premitive data types however you can use those data types to bring into the objects as mentioned in the aboe picture….now it is called wrapping and unrapping when you bring the value from obj.
+Collections bring also the wrapper, becoz they both are OOPs and hence only allow to use wrapper classes which is in tern a variable but in the form of objects.
+How to open differnt predefined API's in Java such as List, Array etc…
+Type. Command + shift + T to open type and then search for example List with thier specific java version
+Then into it pres command + o to search a perticlar thing intoi it
+Or type List list  = new ArrayList() etc and press command and hoverover it.
+Fo type hierarchy, you can write click on the List and open Type hirarchy or f4
+Quick type hierachy can show you like below:
+Or search google
+Marks2.length is a property and therefore not () when it is a method there is a () sign
+Deault Array for Objects/instances are Null
+Printing the array by Arrays.toString(marks)
+Need for variale arugument:
+Variable Argument  int sum(int… values)
+Variable Argument should be the last partameter.
+Refactor inline to change the variable to hard code the value
+Refactor rename to change all the similar feilds to rename them together
+Create a person class first
+class Person(){
+}
+Adding or deleting the element in the Array is very diff…you cannot change the size of an array, either move it into a new one or scrap it
+ArrayList introduced to solve the problem of adding and removing the entities in the Array.
+A constructor in Java is a block of code similar to a method that's called when an instance of an object is created. Here are the key differences between a constructor and a method: A constructor doesn't have a return type. The name of the constructor must be the same as the name of the class.
+Public String toString() method in the Class and sysout(fan) calling the object will reach out to the toString method where you have mentioned String.format as return with
+%s for string
+%d for int
+%b for boolean
+%f for double
+13, 14, 18 full
+17 first 4 videos
+2019-10-15 13:27 Varun Discussion
+1. Talked about
+a. 3 tier architecture,
+i. frontend - controller
+ii. Business logic - Service
+iii. Backend - DAO - database
+2. EndPoint - a URL- where there is a Server/controller/method(service) etc are mrked,
+3. It use to be coming via JSP as front end and Servelets as backend in java, but now it is handled by spring boot where, front end can be used as react, angular etc and backend can be spring boot
+4. SpringBoot - has
+a. Beans Factory - where it keeps all the dependencies and automation
+b. Beans - each object/instance is treated as bean - but more or less bean is something which doesnät have a meaning and it can also be
+i. singleton (once) or
+ii. prototype (always new)
+Wiki..
+In computing based on the Java Platform, JavaBeans are classes that encapsulate many objects into a single object (the bean). They are serializable, have a zero-argument constructor, and allow access to properties using getter and setter methods.
+a. Component - more or less a utility which can be called by any method - works as cross funtional
+b. Controller - the entry point or front end where any endpoint is established
+c. Service - where the business logic is written, mostly triggered from controller, however you can hard code any funtionality in controller just inc ase there is no service.
+d. Autowire - how would a app call a bean from the bean factory.
+Object Composition :
+public static void main(String args[]) {
+B b = new B();
+b.hello();
+A a = new A();
+a.hello();
+}
+}
+class A { // parent class
+A() {
+System.out.println("From A ");
+}
+public void hello() {
+System.out.println("inside hello");
+}
+}
+//class B extends A Inheritance
+class B extends A { // child class or sub class
+B() {
+super();
+System.out.println("From B");
+}
+@Override
+public void hello() {
+System.out.println("inside B hello");
+}
+}
+Using ArrayList in book review class.
+Inheritance(IS A). Sub class extends the super class and gets all the features of the super class.
+If there is a someting mandatory in constructor such as name (to be added in creation), then any sub classes must also have them called such as super(name);
+Inheritance, cannot be 2 or more super class at the time however they can be one at a time and can be in chain kind of inheritence such as animal extends pet and then dog extends the pet but not the case where dog is extendin both the pet and animal together.
+Also, super class can have a sub class variable such as pet can be dog but dog cannot be pet - think of the logic that Pet(dog) can be a dog but may not each dog be your pet.
+Instanceof where we are asking an object if it is belong to the super class or sub class - so if we do Pet pet = new Dog(), then pet can be an instance o DOG class - otherwise not….so that mean,s that super class can also use resources of the sub class.
+Abstract class :
+1. An Abstract class must start with abstract when creating a class
+2. It may have methods only defined but without body closing with; as long as they are also started with abstract keyword.
+3. You cannot create instances of abstract class.
+4. Later if you extend any other class with abstract class, either it should also be an abstract class or it must provide the same method with its body and only then it can extend the abstract class.
+Example abstract class:
+You can have also a non- abstrqct methods in the abstractclass as well.
+Polymorphisam:
+Questions : polymorphisam - interface - ArrayList, implements, wrapper?
+Interface(rules) to implement and class to extend
+Phone terminology is a interface (only rules and no body as abstract) and has certain functions…when samsung will create it it will implement it and so the iphone
+1. Created complexAlgorith as an interface.
+2. Create a project as a runner
+3. Create a dummy algorithem "imoplements" the complexAlgorithem  also, to have a logic a + b
+4. Then call in project - ComplexAlgorithm algorithem = new DummyAlgorithm(), bacically saying that interface has an object created but will be calling the sub class.
+a. So from the project itself you can keep that object to Dummy or Real Algorithm and call the method. Dummy has + but real has *.
+5. Interface is basically has a contract or way of communication between multiple projects/classes.
+Note : interface can also extends another interface, however class can only implements the interface when it can provide the body/implementation of the methods in the interfaces :
+In interfaces, you can create constants and not variable.
+Note :
+1. Inerface can extend the interface
+2. Classes can implements the interface, as long as they are providing the methods implementations to the mthods in the interfacres
+3. If you want to restrict some methods inthe interfacers to be implemented then abstract class can be created to only carry limited method to it.
+4. Also classes can override the methods by defining the same metod again.
+5. Also, keep in mind that an interface can be used in many different classes so adding more methods into the interface may give compilation errors to all such classes, hence an option to add new methods with default to avoid the compilation errors.
+Interface (represents the common actions) vs abstract class
+Interfacd - 2 coponents talking to each other so need a communiction pattern, so one part provide the implementation and other will consume the interface.
+Abstract - provides the high level structure, and implementation will remain with the sub classes, and ensure that each sub classes maintain this structure…and then it extends the classes together.
+1. Interface is for contract, defining the method which will be exectuted in another classes.
+2. Abstract IS A relationship with other classes, as its extends by their sub class.
+In interface everuthing is public and cannot have variable.
+Abstract - u can have variable and pubic.
+This is polymorphisam (same code diff. Behaviour)
+Collections :
+-1 word is not present in the list..
+AnyList you create with xxx.of("Apple", "n", "n"); will be immutable and cannot be changed, so you need to create the ArrayList, LinkedList or Vector.
+Array and Vector are Array but linkedList is linkedList.
+Array accessing is fast
+LinkedList delete and adding is very fast
+Thread safety is costly, if you want single thread to work on work in syncronized way then other threads may be waiting for this thread to finish…syncronized canbe the way to implement the thread safty.
+If you are not worried about threadsafty then we can go and use the ArrayList.
+With for enhance loop it cannot remove both  words who ends with at but iterator does it well.
+So in nutsheel, the best way to do the modification running under loop is by Iterator than the enhance forloop.
+With autoboxing it converts each one of them in the wrapper classes.
+Removing with 101 may considered as a integer value of index and hence we need to tell it that its not index but the value and hence Integer.valueOf - could alos be a new 101 as mentioned previous,y but this is fine.
+Note : What i observer here is that it is imp that we can have a main method beciz it is going to execute from there and also that Student() should call the construct, however if we do the object initiazlisation with Student students = new Student() or by List<> students = List.of(new Student(), new Student….) it doesn't matter, important thing is that construct should be called and no. Of initializers to be fed into the construct.
+Command(ctrl)+ shift + t for searching the default classes
+Reverse this.id to that.id to sort decending order.
+Set - is compare to List
+1. Stores only the unique value
+2. Doesn't matter the poisition of the value, as it never stays permanent and you cannot change/replace based on the index of it.
+Combine of array and linkedlist
+Funda- 4 mod 13 is 4 - where 4 is a divident, 13 is a divider and the surplus is a  something will be quitent and reminder will be the Mod or modulus of it.
+Basically, as long as divident is lesser than the diviser mod will be same as divident, look below example.
+Now, hasing works, that if you want to save 12 in hasing, they check 5 mod 13 and since mod is 12, it will save in the bucket of 12. Also at the same time if you want to save 15, which is more than 13 then reminder will be 2(mod) so ti will also be saved in bucket 2. in a nutshell things will be saved according to its mod so it will be easy to retrive/delete it faster.
+There is an object called hashtable in java, which is based on this.
+https://divisible.info/Modulo/What-is-13-mod-13.html
+1. Smaller left and right greater for each element.
+2. All in the sorted order
+Don't worry about order….its random
+How is been added..
+Sorted automatically
+Mostly it is less than and equal to, and the upper limit is not equal to, however you can keep it true to equal to for the upper and lower limit as well.
+Comparision of HashMap, LinkedHashMap and treeMap
+Neither sort nor insertion order
+Insert order
+Sorted order
+package collections;
+import java.util.HashMap;
+import java.util.Map;
+public class MapRunner {
+public static void main(String[] args) {
+String str = "This is an awesome occasion.
+" before.";
+HashMap<>();
++ "This has never happened
+Map<Character, Integer> occurances = new
+char[] characters = str.toCharArray();
+for(char character:characters) {
+//Get the character
+Integer integer =
+occurances.get(character);
+1);
+integer + 1);
+}
+if(integer==null) {
+occurances.put(character,
+} else {
+occurances.put(character,
+}
+http://beacon. by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 137/203
+9/17/2018 in28Minutes | (0/25)
+System.out.println(occurances);
+Map<String, Integer> stringOccurances = new
+String[] words = str.split(" ");
+for(String word:words) {
+//Get the character
+Integer integer =
+stringOccurances.get(word);
+HashMap<>();
+1);
+integer + 1);
+}
+} }
+Less than and equal and only less then and higher vis a vis
+Since true is navigable , it can do3s all these operations, possible
+So collections :
+1. List : include collection with duplicates
+2. Set : doest inlcude duplicate
+3. Queue : an order is extablished withing elements
+4. Map : Key values
+Further there are data structures, such as Tree, Linked, Hash and Array.
+Hash : Unordered and Un Sorted
+Linked : Ordered - doublylinked where one element is linked with another on both side. Not softed but in Ordered the way it was insearted
+Tree : Sorted Order and so we get NavigableSet implementation
+2019-10-21 09:29 Threading- is basically prallel execution of tasks.
+Thread statuss :
+1. New : Thread kicked off but not started
+2. Runnable : Prepared but not running
+3. Running : when running and acting
+4. Blocked/Waiting : when waiting or blocked for some other thread or db to get some data to work upon.
+5. Terminated/Dead : Once finished it's done
+Its a request and not a mandatory that it will run on higher prioroty all the times.
+Exception Handling : can be caused when you are assumming something such as a env, variable, configuration or a directory/folder and since it is not met, it can cause an excpeiton however you need to handle it clearly so you can figure it  out what is the cause.
+Try catch block….hides exeception from the previous method and let them execute their individual methods. Also, when you catch it you can print ex.printStackTrace() to print the exeption.
+Exception class, has a hirarchy and even if you have multiple exeptions mentiond, it will only match to the relevant exeption and/or the super class of the same.
+Most of the time, when you do scanner opening and not closing it due to some excption etc, there would be the memory leakage as this is something could be part of many times in the code etc…and hence a huge memory loss.
+So introdsucting Finally code block will ensure that this is executing irrespective of the exception however sincde scanner opening was in the try block and not accessable hence they move the Class opening out of the block and kept it to null and letter create the object for scanner and later close it in finally.
+Also, there could be the case that scanner opening it self got some exception so you can have a if statement to ensure to close only if it is running.
+2 reasons when your Finally will not executed
+1. Adding System.exit(1) that will crash your JVM and the whole app
+2. Any code has an exception under your finally. Such as sysout.
+Error could be the stack overflow or out of memory/shortage, we can prevent them but canot handle them like exception
+But in exception there are checked(risky) and unchecked not risky which are runtimeException or sub classes of it those can be ignored at compile time
+Am
+Changing the other to that
+Here the case was checked (non-runtimeexcetion) and unchecked (runtime exception, if you don't handle it by try and catch with proper exception type from the hirarchy…than you simply says that i am risky and add throws Exception in the end of the method and also do the same to the method who is calling it from the main method.
+Custome exeption simply exenting the exception class
+Choosing between the checked and unchecked exception, when you want your consumer to do something about it then you choose the checked excpeption and ask him to do the changes in the input etc..but if you know he cannot do anything about it then you may choose the runtime exeption to just ignore it.
+it is a auto closable of scanner class
+The excptions handling should be sub class and follow by the super classes as it needs to filter the best match first and report the exeption
+Context and line of excption is import to throw
+==============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+MICROSERVICES COURSE
+Interoperable - any tech/language such as .net, java or python should be able to talk to the web service
+Javascript Object notation - to communicate with the Request to make them platform, independent…
+Simple Object Access Protocol - Specific way of building web services… XML as a request exchange fomat.
+Header contains : authentication, authorisation,signatures
+Body : actual response
+Web serr
+Takes the http get request and return the HTML reponse back, its an example for any website you are putting into your browser which is going to the web site server
+Most of the form filling requests are post requests
+Each kind of request has 2 things, Header and Body
+Resource : is anythin which you want to expose to the outside world by your application
+Soap mostly XML or soap xml where json is for rest but can use anyother as well
+SOAP WSDL and REST WADL for service definition
+REST is easy to implement, and has best use of HTTP protocol and easy to understand json
+Dispatcher servlet : is basically doing the mapping of requested URI to the exact endpoint
+Rest conversion of jSON is and error mapping etc are doing by the spring boot auto configuration.
+UML Class Diagrams Tutorial, Step by Step
+https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b
+Questions:
+1. Create a method that will take numbers and the operation to be performed on the numbers and will also display the result. - check if provided operation is invalid
+Check if the numbers are always positive integers
+Tips: use if, use Switch statement
+Public int calculate(int a, int b, String operation)
+Sudo..
+1. Display message with instruction that- input 2 numbers and operation to calculate.
+2. Input 2 numbers and operation
+3. Check - if number are integer
+a. Shoulnn't be 0 or in minus
+4. Check - operation
+a. Valid operations - switch statement
+b. / divide is invalid operation with 2nd number being 0.
+5. Output - Number a operation with number b is equal to result.
+Execution - class - main
+Call the method for input and return the result.
+Class clculation with method
+Method - input
+Method - check integer
+Method - check operation
+Method - calculation and result
+1. Create a method that will create fabonacci series.
+Public void printFabonacci(int limit)
+The limit vlue should never be more than 10000
+The limit vaklue should never be negative
+The limit value should never be 0
+Sudo:
+1. Main class
+a. Object creation
+b. Sysout
+2. Class
+a. Construct
+b. Methods
+Sudo:
+1. Take input number message
+2. Take input from them
+3. Loop till input number -
+a. I
+Call by value  (follows java only call by value)- call by reference
+Receive and use must be same parameters….name and initialization when receiving and names can be anything….
+New learnings :
+Outer and Inner Class in java
+1. When there is a (example jason object where CDC message has furher data and header etc which cannot exist without CDC message) to represent it - can be posted as CDC message as an outer class and data and header as an inner class.
+2. Class Outer{
+a. Class Inner{
+b. }}
+3. Outer o = new Outer
+4. o.inner i = o.new inner();
+Functional Interface:
+1. An interface witch only has one method definition as compre to other interfaces which has many definitions.
+2. Which use to be implemented by a class and has to define its implementation method steps.
+3. Then lambda expression actually implements it without creating an object
+a. Since there is one definition -  lambda expression implements that method definition by just () -> {implementation steps}
+b. Now since, there is only one definition, lambda can keep the () to define that perticular method only…and also this is called the anonymous Inner class as well, since it was never visible..
+c. If there are any parameters to be passed then those can be mentioned in the (int a, int b) within the lambda expression.
+@Functional Interface - check the black register for more info…
+@functional Interface
+Thread Runnable
+{
+Public void run();
+}
+Class X implements Runnable
+{
+Run (){
+}}
+Thread t = new Thread (new X());
+Instead in funtional interface.. It will be
+Thread t = new Thread(
+() ->{
+}
+};
+Steaming API - make collections of list.foreach() etc- so easy to use in java 8..
+Predictive - bican etc…
+……
+Static in java:
+1. Static in java is used for utilising the constants and stuff which is static….and can be called without even creating any object to it.
+2. It is not calling methods on the instance level but calling ath the class level.
+3. Class B{ static void m2(){}}
+4. B.m2(); can be called streight forward without creating its instance.
+2021-04-26 13:04 Katrine lansforsakring discussion on investment
+1. If existing are good
+2. How the market is going to perform
+3. Is it going good as per markets etc..
+General pention is 18% of your yearly money
+Occupational pension - employer who pays for it…
+www.minpension.se <http://www.minpension.se> to see all your pension savings and developments..
+2021-04-26 14:53 ashish and isell meeting..
+Dsup - reporting layer of isell -to extract
+Using google manage ssl certificate from google cloud website.
